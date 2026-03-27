@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veryfi Lens Vite Demo</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Veryfi Lens Scanner</h1>
+        </header>
+        
+        <main>
+            <div class="scanner-controls">
+                <button class="scan-btn" data-type="document">
+                    Scan Document
+                </button>
+                <button class="scan-btn" data-type="long_document">
+                    Scan Long Receipt
+                </button>
+                <button class="scan-btn" data-type="credit_card">
+                    Scan Credit Card
+                </button>
+                <button class="scan-btn" data-type="checks">
+                    Scan Check
+                </button>
+                <button class="scan-btn" data-type="upload">
+                    Upload Image
+                </button>
+                <button class="scan-btn" data-type="caps">
+                    Scan Bottle Cap
+                </button>
+                <button class="scan-btn" data-type="code_strips">
+                    Scan Code Strip
+                </button>
+                <button class="scan-btn" data-type="anydocs">
+                    Scan Anydoc
+                </button>
+            </div>
+
+            <div id="status-display" class="status-display"></div>
+            <div id="result-display" class="result-display"></div>
+        </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
