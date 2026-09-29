@@ -30,6 +30,12 @@ A minimal Vite + Vanilla JS demo for testing the [Veryfi Lens for Browser](https
 
 4. Open **http://localhost:5173/** in your browser and click any scan button to test.
 
+## Settings
+
+Click the gear button in the top-right corner to open **Lens Configuration**. Settings are grouped by area (capture, UI, review gallery, checks, anydocs, etc.), saved to `localStorage`, and applied the next time you start a scan. **Flavor Visibility** shows or hides the scan buttons on the home screen, and **Reset to Defaults** restores the original configuration.
+
+All settings map directly to `VeryfiLens.init()` options — see `src/settings.js` for the defaults and how they are converted into the init config.
+
 ## Build for Production
 
 ```bash
